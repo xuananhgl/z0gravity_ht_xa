@@ -1,0 +1,1021 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2022-10-31 01:24+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ArticlesController.php:61
+#: Controller/ArticlesController.php:87
+msgid "The article has been saved."
+msgstr ""
+
+#: Controller/ArticlesController.php:65
+#: Controller/ArticlesController.php:91
+msgid "The article could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ArticlesController.php:110
+msgid "The article has been deleted."
+msgstr ""
+
+#: Controller/ArticlesController.php:112
+msgid "The article could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/BannersController.php:62
+#: Controller/BannersController.php:87
+msgid "The banner has been saved."
+msgstr ""
+
+#: Controller/BannersController.php:66
+#: Controller/BannersController.php:91
+msgid "The banner could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BannersController.php:109
+msgid "The banner has been deleted."
+msgstr ""
+
+#: Controller/BannersController.php:111
+msgid "The banner could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RolesController.php:54
+#: Controller/RolesController.php:78
+msgid "The role has been saved."
+msgstr ""
+
+#: Controller/RolesController.php:58
+#: Controller/RolesController.php:82
+msgid "The role could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RolesController.php:99
+msgid "The role has been deleted."
+msgstr ""
+
+#: Controller/RolesController.php:101
+msgid "The role could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:58
+#: Controller/TagsController.php:83
+msgid "The tag has been saved."
+msgstr ""
+
+#: Controller/TagsController.php:62
+#: Controller/TagsController.php:87
+msgid "The tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:105
+msgid "The tag has been deleted."
+msgstr ""
+
+#: Controller/TagsController.php:107
+msgid "The tag could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TestimonialsController.php:61
+#: Controller/TestimonialsController.php:86
+msgid "The testimonial has been saved."
+msgstr ""
+
+#: Controller/TestimonialsController.php:65
+#: Controller/TestimonialsController.php:90
+msgid "The testimonial could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TestimonialsController.php:108
+msgid "The testimonial has been deleted."
+msgstr ""
+
+#: Controller/TestimonialsController.php:110
+msgid "The testimonial could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:71
+#: Controller/UsersController.php:96
+#: Controller/UsersController.php:154
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:75
+#: Controller/UsersController.php:100
+#: Controller/UsersController.php:162
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:118
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:120
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:135
+msgid "Invalid Username or Password, try again"
+msgstr ""
+
+#: Template/Articles/add.ctp:9
+#: Template/Articles/edit.ctp:9
+#: Template/Articles/index.ctp:9
+#: Template/Articles/index.ctp:30
+#: Template/Articles/view.ctp:9
+#: Template/Articles/view.ctp:69
+#: Template/Banners/add.ctp:9
+#: Template/Banners/edit.ctp:9
+#: Template/Banners/index.ctp:9
+#: Template/Banners/index.ctp:30
+#: Template/Banners/view.ctp:10
+#: Template/Roles/add.ctp:9
+#: Template/Roles/edit.ctp:9
+#: Template/Roles/index.ctp:9
+#: Template/Roles/index.ctp:22
+#: Template/Roles/view.ctp:9
+#: Template/Tags/add.ctp:9
+#: Template/Tags/edit.ctp:9
+#: Template/Tags/index.ctp:9
+#: Template/Tags/index.ctp:24
+#: Template/Tags/view.ctp:9
+#: Template/Tags/view.ctp:52
+#: Template/Testimonials/add.ctp:9
+#: Template/Testimonials/edit.ctp:9
+#: Template/Testimonials/index.ctp:9
+#: Template/Testimonials/index.ctp:28
+#: Template/Testimonials/view.ctp:9
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:10
+#: Template/Users/index.ctp:10
+#: Template/Users/index.ctp:34
+#: Template/Users/profile.ctp:3
+#: Template/Users/view.ctp:9
+#: Template/Users/view.ctp:70
+#: Template/Users/view.ctp:109
+#: Template/Users/view.ctp:148
+msgid "Actions"
+msgstr ""
+
+#: Template/Articles/add.ctp:10
+#: Template/Articles/edit.ctp:16
+#: Template/Articles/view.ctp:12
+#: Template/Tags/add.ctp:11
+#: Template/Tags/edit.ctp:17
+#: Template/Tags/index.ctp:11
+#: Template/Tags/view.ctp:14
+#: Template/Users/add.ctp:14
+#: Template/Users/edit.ctp:20
+#: Template/Users/index.ctp:14
+#: Template/Users/view.ctp:16
+msgid "List Articles"
+msgstr ""
+
+#: Template/Articles/add.ctp:11
+#: Template/Articles/edit.ctp:17
+#: Template/Articles/index.ctp:11
+#: Template/Articles/view.ctp:14
+#: Template/Banners/add.ctp:11
+#: Template/Banners/edit.ctp:17
+#: Template/Banners/index.ctp:11
+#: Template/Banners/view.ctp:15
+#: Template/Testimonials/add.ctp:11
+#: Template/Testimonials/edit.ctp:17
+#: Template/Testimonials/index.ctp:11
+#: Template/Testimonials/view.ctp:14
+#: Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr ""
+
+#: Template/Articles/add.ctp:12
+#: Template/Articles/edit.ctp:18
+#: Template/Articles/index.ctp:12
+#: Template/Articles/view.ctp:15
+#: Template/Banners/add.ctp:12
+#: Template/Banners/edit.ctp:18
+#: Template/Banners/index.ctp:12
+#: Template/Banners/view.ctp:16
+#: Template/Testimonials/add.ctp:12
+#: Template/Testimonials/edit.ctp:18
+#: Template/Testimonials/index.ctp:12
+#: Template/Testimonials/view.ctp:15
+#: Template/Users/index.ctp:11
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr ""
+
+#: Template/Articles/add.ctp:13
+#: Template/Articles/edit.ctp:19
+#: Template/Articles/index.ctp:13
+#: Template/Articles/view.ctp:16
+#: Template/Tags/add.ctp:10
+#: Template/Tags/edit.ctp:16
+#: Template/Tags/view.ctp:12
+msgid "List Tags"
+msgstr ""
+
+#: Template/Articles/add.ctp:14
+#: Template/Articles/edit.ctp:20
+#: Template/Articles/index.ctp:14
+#: Template/Articles/view.ctp:17
+#: Template/Tags/index.ctp:10
+#: Template/Tags/view.ctp:13
+msgid "New Tag"
+msgstr ""
+
+#: Template/Articles/add.ctp:20
+msgid "Add Article"
+msgstr ""
+
+#: Template/Articles/add.ctp:31
+#: Template/Articles/edit.ctp:37
+#: Template/Banners/add.ctp:30
+#: Template/Banners/edit.ctp:36
+#: Template/Roles/add.ctp:21
+#: Template/Roles/edit.ctp:27
+#: Template/Tags/add.ctp:24
+#: Template/Tags/edit.ctp:30
+#: Template/Testimonials/add.ctp:28
+#: Template/Testimonials/edit.ctp:34
+#: Template/Users/add.ctp:33
+#: Template/Users/edit.ctp:39
+msgid "Submit"
+msgstr ""
+
+#: Template/Articles/edit.ctp:11
+#: Template/Articles/index.ctp:47
+#: Template/Articles/view.ctp:80
+#: Template/Banners/edit.ctp:11
+#: Template/Banners/index.ctp:49
+#: Template/Roles/edit.ctp:11
+#: Template/Roles/index.ctp:35
+#: Template/Tags/edit.ctp:11
+#: Template/Tags/index.ctp:37
+#: Template/Tags/view.ctp:68
+#: Template/Testimonials/edit.ctp:11
+#: Template/Testimonials/index.ctp:45
+#: Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:50
+#: Template/Users/view.ctp:86
+#: Template/Users/view.ctp:127
+#: Template/Users/view.ctp:164
+msgid "Delete"
+msgstr ""
+
+#: Template/Articles/edit.ctp:13
+#: Template/Articles/index.ctp:47
+#: Template/Articles/view.ctp:11
+#: Template/Articles/view.ctp:80
+#: Template/Banners/edit.ctp:13
+#: Template/Banners/index.ctp:49
+#: Template/Banners/view.ctp:12
+#: Template/Roles/edit.ctp:13
+#: Template/Roles/index.ctp:35
+#: Template/Roles/view.ctp:11
+#: Template/Tags/edit.ctp:13
+#: Template/Tags/index.ctp:37
+#: Template/Tags/view.ctp:11
+#: Template/Tags/view.ctp:68
+#: Template/Testimonials/edit.ctp:13
+#: Template/Testimonials/index.ctp:45
+#: Template/Testimonials/view.ctp:11
+#: Template/Users/edit.ctp:14
+#: Template/Users/index.ctp:50
+#: Template/Users/view.ctp:11
+#: Template/Users/view.ctp:86
+#: Template/Users/view.ctp:127
+#: Template/Users/view.ctp:164
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Articles/edit.ctp:26
+#: Template/Articles/view.ctp:10
+msgid "Edit Article"
+msgstr ""
+
+#: Template/Articles/index.ctp:10
+#: Template/Articles/view.ctp:13
+#: Template/Tags/add.ctp:12
+#: Template/Tags/edit.ctp:18
+#: Template/Tags/index.ctp:12
+#: Template/Tags/view.ctp:15
+#: Template/Users/add.ctp:15
+#: Template/Users/edit.ctp:21
+#: Template/Users/index.ctp:15
+#: Template/Users/view.ctp:17
+msgid "New Article"
+msgstr ""
+
+#: Template/Articles/index.ctp:18
+msgid "Articles"
+msgstr ""
+
+#: Template/Articles/index.ctp:45
+#: Template/Articles/view.ctp:78
+#: Template/Banners/index.ctp:47
+#: Template/Roles/index.ctp:33
+#: Template/Tags/index.ctp:35
+#: Template/Tags/view.ctp:66
+#: Template/Testimonials/index.ctp:43
+#: Template/Users/index.ctp:48
+#: Template/Users/view.ctp:84
+#: Template/Users/view.ctp:125
+#: Template/Users/view.ctp:162
+msgid "View"
+msgstr ""
+
+#: Template/Articles/index.ctp:46
+#: Template/Articles/view.ctp:79
+#: Template/Banners/index.ctp:48
+#: Template/Roles/index.ctp:34
+#: Template/Tags/index.ctp:36
+#: Template/Tags/view.ctp:67
+#: Template/Testimonials/index.ctp:44
+#: Template/Users/index.ctp:49
+#: Template/Users/view.ctp:85
+#: Template/Users/view.ctp:126
+#: Template/Users/view.ctp:163
+msgid "Edit"
+msgstr ""
+
+#: Template/Articles/index.ctp:55
+#: Template/Banners/index.ctp:57
+#: Template/Roles/index.ctp:43
+#: Template/Tags/index.ctp:45
+#: Template/Testimonials/index.ctp:53
+#: Template/Users/index.ctp:58
+msgid "first"
+msgstr ""
+
+#: Template/Articles/index.ctp:56
+#: Template/Banners/index.ctp:58
+#: Template/Roles/index.ctp:44
+#: Template/Tags/index.ctp:46
+#: Template/Testimonials/index.ctp:54
+#: Template/Users/index.ctp:59
+msgid "previous"
+msgstr ""
+
+#: Template/Articles/index.ctp:58
+#: Template/Banners/index.ctp:60
+#: Template/Roles/index.ctp:46
+#: Template/Tags/index.ctp:48
+#: Template/Testimonials/index.ctp:56
+#: Template/Users/index.ctp:61
+msgid "next"
+msgstr ""
+
+#: Template/Articles/index.ctp:59
+#: Template/Banners/index.ctp:61
+#: Template/Roles/index.ctp:47
+#: Template/Tags/index.ctp:49
+#: Template/Testimonials/index.ctp:57
+#: Template/Users/index.ctp:62
+msgid "last"
+msgstr ""
+
+#: Template/Articles/index.ctp:61
+#: Template/Banners/index.ctp:63
+#: Template/Roles/index.ctp:49
+#: Template/Tags/index.ctp:51
+#: Template/Testimonials/index.ctp:59
+#: Template/Users/index.ctp:64
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Articles/view.ctp:11
+msgid "Delete Article"
+msgstr ""
+
+#: Template/Articles/view.ctp:24
+#: Template/Tags/view.ctp:44
+#: Template/Users/view.ctp:62
+msgid "Img Url"
+msgstr ""
+
+#: Template/Articles/view.ctp:28
+#: Template/Articles/view.ctp:66
+#: Template/Banners/view.ctp:23
+#: Template/Tags/view.ctp:22
+#: Template/Tags/view.ctp:45
+#: Template/Users/view.ctp:63
+#: Template/Users/view.ctp:99
+msgid "Title"
+msgstr ""
+
+#: Template/Articles/view.ctp:32
+#: Template/Tags/view.ctp:46
+#: Template/Users/view.ctp:64
+msgid "Category"
+msgstr ""
+
+#: Template/Articles/view.ctp:36
+#: Template/Tags/view.ctp:48
+#: Template/Users/view.ctp:66
+msgid "Article Url"
+msgstr ""
+
+#: Template/Articles/view.ctp:40
+#: Template/Banners/view.ctp:47
+#: Template/Testimonials/view.ctp:38
+msgid "User"
+msgstr ""
+
+#: Template/Articles/view.ctp:44
+#: Template/Articles/view.ctp:65
+#: Template/Banners/view.ctp:51
+#: Template/Roles/view.ctp:24
+#: Template/Tags/view.ctp:26
+#: Template/Tags/view.ctp:43
+#: Template/Testimonials/view.ctp:42
+#: Template/Users/profile.ctp:32
+#: Template/Users/view.ctp:44
+#: Template/Users/view.ctp:61
+#: Template/Users/view.ctp:98
+#: Template/Users/view.ctp:139
+msgid "Id"
+msgstr ""
+
+#: Template/Articles/view.ctp:48
+#: Template/Articles/view.ctp:67
+#: Template/Banners/view.ctp:55
+#: Template/Roles/view.ctp:28
+#: Template/Tags/view.ctp:30
+#: Template/Tags/view.ctp:50
+#: Template/Testimonials/view.ctp:46
+#: Template/Users/profile.ctp:36
+#: Template/Users/view.ctp:48
+#: Template/Users/view.ctp:68
+#: Template/Users/view.ctp:107
+#: Template/Users/view.ctp:146
+msgid "Created"
+msgstr ""
+
+#: Template/Articles/view.ctp:52
+#: Template/Articles/view.ctp:68
+#: Template/Banners/view.ctp:59
+#: Template/Roles/view.ctp:32
+#: Template/Tags/view.ctp:34
+#: Template/Tags/view.ctp:51
+#: Template/Testimonials/view.ctp:50
+#: Template/Users/profile.ctp:40
+#: Template/Users/view.ctp:52
+#: Template/Users/view.ctp:69
+#: Template/Users/view.ctp:108
+#: Template/Users/view.ctp:147
+msgid "Modified"
+msgstr ""
+
+#: Template/Articles/view.ctp:57
+#: Template/Banners/view.ctp:64
+#: Template/Tags/view.ctp:47
+#: Template/Testimonials/view.ctp:55
+#: Template/Users/view.ctp:65
+#: Template/Users/view.ctp:100
+#: Template/Users/view.ctp:141
+msgid "Description"
+msgstr ""
+
+#: Template/Articles/view.ctp:61
+msgid "Related Tags"
+msgstr ""
+
+#: Template/Banners/add.ctp:10
+#: Template/Banners/edit.ctp:16
+#: Template/Banners/view.ctp:13
+#: Template/Users/add.ctp:16
+#: Template/Users/edit.ctp:22
+#: Template/Users/index.ctp:16
+#: Template/Users/view.ctp:18
+msgid "List Banners"
+msgstr ""
+
+#: Template/Banners/add.ctp:18
+msgid "Add Banner"
+msgstr ""
+
+#: Template/Banners/edit.ctp:24
+#: Template/Banners/view.ctp:11
+msgid "Edit Banner"
+msgstr ""
+
+#: Template/Banners/index.ctp:10
+#: Template/Banners/view.ctp:14
+#: Template/Users/add.ctp:17
+#: Template/Users/edit.ctp:23
+#: Template/Users/index.ctp:17
+#: Template/Users/view.ctp:19
+msgid "New Banner"
+msgstr ""
+
+#: Template/Banners/index.ctp:16
+msgid "Banners"
+msgstr ""
+
+#: Template/Banners/view.ctp:12
+msgid "Delete Banner"
+msgstr ""
+
+#: Template/Banners/view.ctp:27
+#: Template/Users/view.ctp:101
+msgid "Video Url"
+msgstr ""
+
+#: Template/Banners/view.ctp:31
+#: Template/Users/view.ctp:102
+msgid "Btn Content"
+msgstr ""
+
+#: Template/Banners/view.ctp:35
+#: Template/Users/view.ctp:103
+msgid "Image Url"
+msgstr ""
+
+#: Template/Banners/view.ctp:39
+#: Template/Users/view.ctp:104
+msgid "Background Color"
+msgstr ""
+
+#: Template/Banners/view.ctp:43
+#: Template/Users/view.ctp:105
+msgid "Text Color"
+msgstr ""
+
+#: Template/Banners/view.ctp:68
+msgid "Preview"
+msgstr ""
+
+#: Template/Element/Widgets/Articles.ctp:3
+msgid "Our articles"
+msgstr ""
+
+#: Template/Element/Widgets/Articles.ctp:23
+#: Template/Element/Widgets/Articles.ctp:26
+#: Template/Element/Widgets/TestimonialsCarousel.ctp:27
+#: Template/Element/Widgets/TestimonialsCarousel.ctp:62
+msgid "Read the article"
+msgstr ""
+
+#: Template/Element/Widgets/Articles.ctp:38
+msgid "See all articles"
+msgstr ""
+
+#: Template/Element/Widgets/Banner.ctp:8
+msgid "Voir la vidéo"
+msgstr ""
+
+#: Template/Element/Widgets/TestimonialsCarousel.ctp:25
+#: Template/Element/Widgets/TestimonialsCarousel.ctp:60
+msgid "Read the article "
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:63
+#: Template/Layout/z0gravity.ctp:99
+msgid "Companies"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:64
+msgid "SECTEUR PUBLIC"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:65
+#: Template/Layout/z0gravity.ctp:101
+msgid "About"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:66
+msgid "CONTACT"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:67
+msgid "BLOG"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:68
+msgid "Log Out"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:96
+msgid "Together, we go further."
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:100
+msgid "Communities"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:102
+msgid "Contact"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:103
+msgid "Blog"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:107
+msgid "SUIVEZ-NOUS"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:113
+msgid "Change region"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:124
+msgid "Plan du site"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:125
+msgid "Contactez-nous"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:126
+msgid "Mentions légales"
+msgstr ""
+
+#: Template/Layout/z0gravity.ctp:128
+msgid "© 2019 Globalsi SAS"
+msgstr ""
+
+#: Template/Pages/home.ctp:21
+msgid "TO SHORTEN IT."
+msgstr ""
+
+#: Template/Pages/home.ctp:22
+msgid "Z0 Gravity is a multi-project management software:"
+msgstr ""
+
+#: Template/Pages/home.ctp:22
+msgid "whatever their complexity, you easily manage the schedules, budgets and human resources of your projects through cross-functional and collaborative use."
+msgstr ""
+
+#: Template/Pages/home.ctp:28
+msgid "Our objective :"
+msgstr ""
+
+#: Template/Pages/home.ctp:29
+msgid "It means helping any type of organization to carry out its projects with a single watchword:"
+msgstr ""
+
+#: Template/Pages/home.ctp:30
+msgid "sim-pli-ci-ty !"
+msgstr ""
+
+#: Template/Pages/home.ctp:44
+msgid "Discover the universe z0 Gravity"
+msgstr ""
+
+#: Template/Pages/home.ctp:45
+msgid "Schedules, budgets, calendars… In the blink of an eye, you have a global and strategic vision of the progress of your projects in real time!"
+msgstr ""
+
+#: Template/Pages/home.ctp:46
+msgid "Video presentation"
+msgstr ""
+
+#: Template/Pages/home.ctp:64
+msgid "You are…"
+msgstr ""
+
+#: Template/Pages/home.ctp:77
+msgid "A company"
+msgstr ""
+
+#: Template/Pages/home.ctp:78
+msgid "Teamwork: unite your teams around a common goal."
+msgstr ""
+
+#: Template/Pages/home.ctp:79
+msgid "3,2,1… Go !"
+msgstr ""
+
+#: Template/Pages/home.ctp:90
+msgid "A community"
+msgstr ""
+
+#: Template/Pages/home.ctp:91
+msgid "Bring together the actors of your project via a common software!"
+msgstr ""
+
+#: Template/Pages/home.ctp:92
+msgid "Find out how"
+msgstr ""
+
+#: Template/Pages/home.ctp:103
+msgid "A lost walker"
+msgstr ""
+
+#: Template/Pages/home.ctp:104
+msgid "Welcome ! Sit down and let yourself be guided."
+msgstr ""
+
+#: Template/Pages/home.ctp:105
+msgid "Let's start here"
+msgstr ""
+
+#: Template/Pages/home.ctp:119
+msgid "Enough about us."
+msgstr ""
+
+#: Template/Pages/home.ctp:120
+msgid "Tell us about you !"
+msgstr ""
+
+#: Template/Pages/home.ctp:124
+msgid "On discute !"
+msgstr ""
+
+#: Template/Pages/home.ctp:151
+msgid "Changer de région"
+msgstr ""
+
+#: Template/Pages/home.ctp:160
+msgid "If you select another region, the language and content of z0gravity.com will change."
+msgstr ""
+
+#: Template/Pages/home.ctp:165
+msgctxt "listLanguage"
+msgid "Vietnamese"
+msgstr ""
+
+#: Template/Pages/home.ctp:166
+msgctxt "listLanguage"
+msgid "German"
+msgstr ""
+
+#: Template/Pages/home.ctp:167
+msgctxt "listLanguage"
+msgid "English"
+msgstr ""
+
+#: Template/Pages/home.ctp:168
+msgctxt "listLanguage"
+msgid "Spanish"
+msgstr ""
+
+#: Template/Pages/home.ctp:169
+msgctxt "listLanguage"
+msgid "French"
+msgstr ""
+
+#: Template/Pages/home.ctp:170
+msgctxt "listLanguage"
+msgid "Nederlands"
+msgstr ""
+
+#: Template/Pages/home.ctp:171
+msgctxt "listLanguage"
+msgid "Polish"
+msgstr ""
+
+#: Template/Pages/home.ctp:172
+msgctxt "listLanguage"
+msgid "Português"
+msgstr ""
+
+#: Template/Pages/home.ctp:173
+msgctxt "listLanguage"
+msgid "Русский"
+msgstr ""
+
+#: Template/Pages/home.ctp:174
+msgctxt "listLanguage"
+msgid "Bokmål"
+msgstr ""
+
+#: Template/Pages/home.ctp:175
+msgctxt "listLanguage"
+msgid "Ελληνικά"
+msgstr ""
+
+#: Template/Pages/home.ctp:176
+msgctxt "listLanguage"
+msgid "日本語"
+msgstr ""
+
+#: Template/Pages/home.ctp:177
+msgctxt "listLanguage"
+msgid "繁體中文"
+msgstr ""
+
+#: Template/Roles/add.ctp:10
+#: Template/Roles/edit.ctp:16
+#: Template/Roles/view.ctp:12
+#: Template/Users/add.ctp:12
+#: Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12
+#: Template/Users/view.ctp:14
+msgid "List Roles"
+msgstr ""
+
+#: Template/Roles/add.ctp:16
+msgid "Add Role"
+msgstr ""
+
+#: Template/Roles/edit.ctp:22
+#: Template/Roles/view.ctp:10
+msgid "Edit Role"
+msgstr ""
+
+#: Template/Roles/index.ctp:10
+#: Template/Roles/view.ctp:13
+#: Template/Users/add.ctp:13
+#: Template/Users/edit.ctp:19
+#: Template/Users/index.ctp:13
+#: Template/Users/view.ctp:15
+msgid "New Role"
+msgstr ""
+
+#: Template/Roles/index.ctp:14
+msgid "Roles"
+msgstr ""
+
+#: Template/Roles/view.ctp:11
+msgid "Delete Role"
+msgstr ""
+
+#: Template/Roles/view.ctp:20
+#: Template/Users/profile.ctp:28
+#: Template/Users/view.ctp:40
+msgid "Role"
+msgstr ""
+
+#: Template/Tags/add.ctp:18
+msgid "Add Tag"
+msgstr ""
+
+#: Template/Tags/edit.ctp:24
+#: Template/Tags/view.ctp:10
+msgid "Edit Tag"
+msgstr ""
+
+#: Template/Tags/index.ctp:16
+msgid "Tags"
+msgstr ""
+
+#: Template/Tags/view.ctp:11
+msgid "Delete Tag"
+msgstr ""
+
+#: Template/Tags/view.ctp:39
+#: Template/Users/view.ctp:57
+msgid "Related Articles"
+msgstr ""
+
+#: Template/Tags/view.ctp:49
+#: Template/Users/view.ctp:67
+#: Template/Users/view.ctp:106
+#: Template/Users/view.ctp:145
+msgid "User Id"
+msgstr ""
+
+#: Template/Testimonials/add.ctp:10
+#: Template/Testimonials/edit.ctp:16
+#: Template/Testimonials/view.ctp:12
+#: Template/Users/add.ctp:18
+#: Template/Users/edit.ctp:24
+#: Template/Users/index.ctp:18
+#: Template/Users/view.ctp:20
+msgid "List Testimonials"
+msgstr ""
+
+#: Template/Testimonials/add.ctp:18
+msgid "Add Testimonial"
+msgstr ""
+
+#: Template/Testimonials/edit.ctp:24
+#: Template/Testimonials/view.ctp:10
+msgid "Edit Testimonial"
+msgstr ""
+
+#: Template/Testimonials/index.ctp:10
+#: Template/Testimonials/view.ctp:13
+#: Template/Users/add.ctp:19
+#: Template/Users/edit.ctp:25
+#: Template/Users/index.ctp:19
+#: Template/Users/view.ctp:21
+msgid "New Testimonial"
+msgstr ""
+
+#: Template/Testimonials/index.ctp:16
+msgid "Testimonials"
+msgstr ""
+
+#: Template/Testimonials/view.ctp:11
+msgid "Delete Testimonial"
+msgstr ""
+
+#: Template/Testimonials/view.ctp:22
+#: Template/Users/view.ctp:140
+msgid "Logo Url"
+msgstr ""
+
+#: Template/Testimonials/view.ctp:26
+#: Template/Users/view.ctp:142
+msgid "Testimonial Author"
+msgstr ""
+
+#: Template/Testimonials/view.ctp:30
+#: Template/Users/view.ctp:143
+msgid "Testimonial Author Position"
+msgstr ""
+
+#: Template/Testimonials/view.ctp:34
+#: Template/Users/view.ctp:144
+msgid "Testimonial Url"
+msgstr ""
+
+#: Template/Users/add.ctp:25
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/edit.ctp:31
+#: Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:23
+msgid "Users"
+msgstr ""
+
+#: Template/Users/profile.ctp:4
+msgid "All Banner"
+msgstr ""
+
+#: Template/Users/profile.ctp:5
+msgid "All Testimonials"
+msgstr ""
+
+#: Template/Users/profile.ctp:6
+msgid "All Articles"
+msgstr ""
+
+#: Template/Users/profile.ctp:7
+msgid "All Tags"
+msgstr ""
+
+#: Template/Users/profile.ctp:8
+msgid "All Roles"
+msgstr ""
+
+#: Template/Users/profile.ctp:9
+msgid "All Users"
+msgstr ""
+
+#: Template/Users/profile.ctp:13
+msgid "Hello "
+msgstr ""
+
+#: Template/Users/profile.ctp:16
+#: Template/Users/view.ctp:28
+msgid "User Email"
+msgstr ""
+
+#: Template/Users/profile.ctp:20
+#: Template/Users/view.ctp:32
+msgid "User Password"
+msgstr ""
+
+#: Template/Users/profile.ctp:24
+#: Template/Users/view.ctp:36
+msgid "User Url"
+msgstr ""
+
+#: Template/Users/register.ctp:11
+msgid "Please enter your email and password"
+msgstr ""
+
+#: Template/Users/register.ctp:17
+msgid "Register"
+msgstr ""
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr ""
+
+#: Template/Users/view.ctp:94
+msgid "Related Banners"
+msgstr ""
+
+#: Template/Users/view.ctp:135
+msgid "Related Testimonials"
+msgstr ""
+
