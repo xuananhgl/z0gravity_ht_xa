@@ -41,8 +41,8 @@ class PagesController extends AppController
     public function display(...$path)
     {
         $banner ='';
-        $testimonial ='';
-        $article ='';//query
+        $testimonials ='';
+        $articles ='';//query
 
         $this->loadModel('Banners');
         $this->loadModel('Testimonials');
@@ -65,5 +65,27 @@ class PagesController extends AppController
 
         $this->set(compact('banner','testimonials','articles'));
         $this->render('home');
+    }
+    public function VisualEditor(){
+        $banners ='';
+        $testimonials ='';
+        $articles ='';//query
+
+        $this->loadModel('Banners');
+        $this->loadModel('Testimonials');
+        $this->loadModel('Articles');
+
+        $banners = $this->Banners->find('all')->all();
+        
+        $testimonials = $this->Testimonials->find('all')->all();
+
+        $articles = $this->Articles->find('all')->all();
+
+        $this->set(compact('banners','testimonials','articles'));
+        $this->render('home');
+        debug($banners);
+        debug($testimonials);
+        debug($articles);
+        exit;
     }
 }
