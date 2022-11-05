@@ -136,8 +136,8 @@
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl mx-auto">
     <div class="modal-content">
-        <div class="embed-responsive embed-responsive-16by9 mx-auto">
-            <iframe src=<?=$banner->lp_content->video_url?> title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9 w-100">
+            <iframe class="embed-responsive-item w-100" allowscriptaccess="always" src="<?=$banner->video_url?>" title="video player"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
   </div>
@@ -162,19 +162,19 @@
 
                     <?php
                         $langList = [
-                            $this->Html->link(__x('listLanguage','Vietnamese'), $this->Url->build(['?' => ['lang' => 'vi_VN']])),
-                            $this->Html->link(__x('listLanguage','German'), $this->Url->build(['?' => ['lang' => 'de_DE']])),
-                            $this->Html->link(__x('listLanguage','English'), $this->Url->build(['?' => ['lang' => 'en_US']])),
-                            $this->Html->link(__x('listLanguage','Spanish'), $this->Url->build(['?' => ['lang' => 'es_ES']])),
-                            $this->Html->link(__x('listLanguage','French'), $this->Url->build(['?' => ['lang' => 'fr_FR']])),
-                            $this->Html->link(__x('listLanguage','Nederlands'), $this->Url->build(['?' => ['lang' => 'nl_NL']])),
-                            $this->Html->link(__x('listLanguage','Polish'), $this->Url->build(['?' => ['lang' => 'pl_PL']])),
-                            $this->Html->link(__x('listLanguage','Português'), $this->Url->build(['?' => ['lang' => 'pt_BR']])),
-                            $this->Html->link(__x('listLanguage','Русский'), $this->Url->build(['?' => ['lang' => 'ru_RU']])),
-                            $this->Html->link(__x('listLanguage','Bokmål'), $this->Url->build(['?' => ['lang' => 'nb_NO']])),
-                            $this->Html->link(__x('listLanguage','Ελληνικά'), $this->Url->build(['?' => ['lang' => 'el_GR']])),
-                            $this->Html->link(__x('listLanguage','日本語'), $this->Url->build(['?' => ['lang' => 'ja_JP']])),
-                            $this->Html->link(__x('listLanguage','繁體中文'), $this->Url->build(['?' => ['lang' => 'zh_CN']]))
+                            $this->Html->link(__x('listLanguage','Vietnamese'), '?lang=vi_VN'),
+                            $this->Html->link(__x('listLanguage','German'), '?lang=de_DE'),
+                            $this->Html->link(__x('listLanguage','English'), '?lang=en_US'),
+                            $this->Html->link(__x('listLanguage','Spanish'), '?lang=es_ES'),
+                            $this->Html->link(__x('listLanguage','French'), '?lang=fr_FR'),
+                            $this->Html->link(__x('listLanguage','Nederlands'), '?lang=nl_NL'),
+                            $this->Html->link(__x('listLanguage','Polish'), '?lang=pl_PL'),
+                            $this->Html->link(__x('listLanguage','Português'), '?lang=pt_BR'),
+                            $this->Html->link(__x('listLanguage','Русский'), '?lang=ru_RU'),
+                            $this->Html->link(__x('listLanguage','Bokmål'), '?lang=nb_NO'),
+                            $this->Html->link(__x('listLanguage','Ελληνικά'), '?lang=el_GR'),
+                            $this->Html->link(__x('listLanguage','日本語'), '?lang=ja_JP'),
+                            $this->Html->link(__x('listLanguage','繁體中文'), '?lang=zh_CN')
                         ];
                         echo $this->Html->nestedList($langList, [
                             'class' => 'list-unstyled row p-0',

@@ -8,8 +8,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Banner'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        
+        <li><?= $this->Html->link(__('Back'), $this->request->referer()) ?> </li>
+        <li><?= $this->Html->link(__('Exit'), ['controller'=>'Users','action' => 'profile']) ?></li>
+        <li><?= $this->Html->link(__('Home'), '/') ?></li>
     </ul>
 </nav>
 <div class="banners index large-9 medium-8 columns content">
@@ -46,6 +48,7 @@
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $banner->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $banner->id]) ?>
+                    <?= $this->Html->link(__('Translate'), ['action' => 'translate', $banner->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $banner->id], ['confirm' => __('Are you sure you want to delete # {0}?', $banner->id)]) ?>
                 </td>
             </tr>

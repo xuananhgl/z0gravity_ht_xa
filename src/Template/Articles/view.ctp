@@ -11,10 +11,14 @@
         <li><?= $this->Form->postLink(__('Delete Article'), ['action' => 'delete', $article->id], ['confirm' => __('Are you sure you want to delete # {0}?', $article->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Articles'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Article'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
+        
         <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Translate'), ['action' => 'translate']) ?></li>
+        
+        <li><?= $this->Html->link(__('Back'), $this->request->referer()) ?> </li>
+        <li><?= $this->Html->link(__('Exit'), ['controller'=>'Users','action' => 'profile']) ?></li>
+        <li><?= $this->Html->link(__('Home'), '/') ?></li>
     </ul>
 </nav>
 <div class="articles view large-9 medium-8 columns content">
@@ -56,6 +60,7 @@
     <div class="row">
         <h4><?= __('Description') ?></h4>
         <?= $this->Text->autoParagraph(h($article->description)); ?>
+        <p><b>Tags:</b> <?= h($article->tag_string) ?></p>
     </div>
     <div class="related">
         <h4><?= __('Related Tags') ?></h4>
@@ -72,8 +77,10 @@
             <tr>
                 <td><?= h($tags->id) ?></td>
                 <td><?= h($tags->title) ?></td>
+                <td><?= h($article->tag_string) ?></td>
                 <td><?= h($tags->created) ?></td>
                 <td><?= h($tags->modified) ?></td>
+                
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Tags', 'action' => 'view', $tags->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Tags', 'action' => 'edit', $tags->id]) ?>

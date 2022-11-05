@@ -61,31 +61,31 @@ class BannersController extends AppController
         $banner = $this->Banners->newEntity();
         if ($this->request->is('post')) {
             $banner = $this->Banners->patchEntity($banner,  $this->request->getData());
-            if(!$banner->getErrors()){
-                $image = $this->request->getUploadedFile('image_url');
-                $name = $image->getClientFilename();
+            // upload image for banner
+            // if(!$banner->getErrors()){
+            //     $image = $this->request->getUploadedFile('image_url');
+            //     $name = $image->getClientFilename();
                 
-                $bannersPath = USERFILES. 'banners';
-                $targetPath = $bannersPath . DS . $name;
+            //     $bannersPath = USERFILES. 'banners';
+            //     $targetPath = $bannersPath . DS . $name;
 
-                $forderUserfiles = new Folder(USERFILES, true, 0775);
-                $folderBanners = new Folder($bannersPath, true, 0775);
+            //     $forderUserfiles = new Folder(USERFILES, true, 0775);
+            //     $folderBanners = new Folder($bannersPath, true, 0775);
                 
-                $image->moveTo($targetPath);        
-                $banner->image_url = $this->banner_path.$name;
+            //     $image->moveTo($targetPath);
+            //     $banner->image_url = $this->banner_path.$name;
 
-                if ($this->Banners->save($banner)) {
-                    $this->Flash->success(__("The {0} has been saved.", 'banner'));
-                    return $this->redirect(['action' => 'index']);
-                }
+            //     if ($this->Banners->save($banner)) {
+            //         $this->Flash->success(__("The {0} has been saved.", 'banner'));
+            //         return $this->redirect(['action' => 'index']);
+            //     }
                 
-            }
-            // debug($banner->getErrors); exit;
-            // if ($this->Banners->save($banner)) {
-            //     $this->Flash->success(__('The banner has been saved.'));
-
-            //     return $this->redirect(['action' => 'index']);
             // }
+            if ($this->Banners->save($banner)) {
+                $this->Flash->success(__('The banner has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
             $this->Flash->error( __('The {0} could not be saved. Please, try again.', 'banner'));
         }
         $users = $this->Banners->Users->find('list', ['limit' => 200]);
@@ -106,25 +106,9 @@ class BannersController extends AppController
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $banner = $this->Banners->patchEntity($banner, $this->request->getData());
-            
-            if(!$banner->getErrors()){
-                $image = $this->request->getUploadedFile('image_url');
-                $name = $image->getClientFilename();
-                
-                $bannersPath = USERFILES. 'banners';
-                $targetPath = $bannersPath . DS . $name;
-
-                $forderUserfiles = new Folder(USERFILES, true, 0775);
-                $folderBanners = new Folder($bannersPath, true, 0775);
-                
-                $image->moveTo($targetPath);        
-                $banner->image_url = $this->banner_path.$name;
-
-                if ($this->Banners->save($banner)) {
-                    $this->Flash->success(__('The banner has been saved.'));
-
-                    return $this->redirect(['action' => 'index']);
-                }
+            if ($this->Banners->save($banner)) {
+                $this->Flash->success(__('The banner has been saved.'));
+                return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The banner could not be saved. Please, try again.'));
         }
@@ -150,5 +134,23 @@ class BannersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function translate($id=null){
+        $banner = $this->Banners->get($id, [
+            'contain' => [],
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {  
+            
+            $banner = $this->Banners->patchEntity($banner, $this->request->getData());
+
+            if ($this->Banners->save($banner)) {
+                $this->Flash->success(__('The presses testimonial has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The presses testimonial could not be saved. Please, try again.'));
+        }
+        $this->set(compact('banner'));
     }
 }

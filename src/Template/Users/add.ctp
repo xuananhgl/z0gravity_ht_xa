@@ -3,20 +3,13 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\User $user
  */
-$this->layout = 'default_old'
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Roles'), ['controller' => 'Roles', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Role'), ['controller' => 'Roles', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Articles'), ['controller' => 'Articles', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Article'), ['controller' => 'Articles', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Banners'), ['controller' => 'Banners', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Banner'), ['controller' => 'Banners', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Testimonials'), ['controller' => 'Testimonials', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Testimonial'), ['controller' => 'Testimonials', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('All Actions') ?></li>
+        <li><?= $this->Html->link(__('Back'), $this->request->referer()) ?> </li>
+        <li><?= $this->Html->link(__('Exit'), ['controller'=>'Users','action' => 'profile']) ?></li>
+        <li><?= $this->Html->link(__('Home'), '/') ?></li>
     </ul>
 </nav>
 <div class="users form large-9 medium-8 columns content">

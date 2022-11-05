@@ -1,5 +1,7 @@
 <?php
-$cakeDescription = $cakeDescription = 'z0gravity: make by ht from greesystem solution';
+$z0gSeoTitle = 'Logiciel de gestion de projets simple et ultra-accessible';
+$z0gSeoDescription = 'Logiciel de gestion de projets simple et ultra-accessible';
+$z0gSeoKeywords = 'Logiciel de gestion de projets';
 ?>
 
 <!DOCTYPE html>
@@ -9,11 +11,14 @@ $cakeDescription = $cakeDescription = 'z0gravity: make by ht from greesystem sol
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-      <?= $cakeDescription ?>
+      <?= $z0gSeoTitle ?>
       <?= $this->fetch('title') ?>
   </title>
 
-  <?= $this->Html->meta('icon') ?>
+  <!-- SEO meta data -->
+  <?= $this->Html->meta('favicon.ico','/favicon.ico',['type' => 'icon']); ?>
+  <?= $this->Html->meta('keywords', $z0gSeoKeywords );?>
+  <?= $this->Html->meta('description', $z0gSeoDescription);?>
 
   <!-- Google Font: Source Sans Pro -->
   <?= $this->Html->css('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') ?>

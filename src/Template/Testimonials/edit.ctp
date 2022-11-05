@@ -13,9 +13,9 @@
                 ['confirm' => __('Are you sure you want to delete # {0}?', $testimonial->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Testimonials'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Back'), $this->request->referer()) ?> </li>
+        <li><?= $this->Html->link(__('Exit'), ['controller'=>'Users','action' => 'profile']) ?></li>
+        <li><?= $this->Html->link(__('Home'), '/') ?></li>
     </ul>
 </nav>
 <div class="testimonials form large-9 medium-8 columns content">

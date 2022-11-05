@@ -6,23 +6,10 @@
 .fa {
     font-family: 'FontAwesome'! Important; 
 }
-@font-face {
-    font-family: "Poppins-SemiBold";
-    src: url("/fonts/Poppins-SemiBold.tff") format("tff"),
-}
-@font-face {
-    font-family: "Poppins-Regular";
-    src: url("/fonts/Poppins-Regular.tff") format("tff"),
-}
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url("/fonts/Poppins-Medium.tff") format("tff"),
-}
-
 
 body{
     margin: auto;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     max-width: var(--maxWidth);
@@ -67,6 +54,8 @@ a{
     color: var(--primaryColor);
     font-weight: bold;
 }
+/* css adminbar */
+
 /* css bannerContent  */
 .bannerContent{
     /* color: var(--primaryColor); */
@@ -235,21 +224,21 @@ video[poster]{
     padding-left: 35px;
 }
 .bigcard .cardbackground>h2{
-    font-family: "Poppins", Sans-serif;
+    font-family: "Roboto", Sans-serif;
     font-size: 30px;
     font-weight: 600; 
 }
 .bigcard .cardbackground>p{
     margin-top: 10px;
     color: var(--primaryColor);
-    font-family: "Poppins", Sans-serif;
+    font-family: "Roboto", Sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px
 }
 .bigcard .cardbackground p strong{
     color: var(--primaryColor);
-    font-family: "Poppins", Sans-serif;
+    font-family: "Roboto", Sans-serif;
     font-size: 28px;
     font-weight: 600;
     line-height: 35px
@@ -353,7 +342,7 @@ video[poster]{
 .ourArticlesCard a {
     width: 118px;
     border: 2px solid #1C9DF4;
-    font-family: "Poppins", Sans-serif;
+    font-family: "Roboto", Sans-serif;
     font-size: 13px;
     font-weight: 600;
     line-height: 32px;

@@ -12,8 +12,9 @@
  * @since         0.10.0
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$z0gSeoTitle = 'Logiciel de gestion de projets simple et ultra-accessible';
+$z0gSeoDescription = 'Logiciel de gestion de projets simple et ultra-accessible';
+$z0gSeoKeywords = 'Logiciel de gestion de projets';
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,13 +22,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>:
+        <?= $z0gSeoTitle ?>
         <?= $this->fetch('title') ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
+
+    <!-- SEO meta data -->
+    <?= $this->Html->meta('favicon.ico','/favicon.ico',['type' => 'icon']); ?>
+    <?= $this->Html->meta('keywords', $z0gSeoKeywords );?>
+    <?= $this->Html->meta('description', $z0gSeoDescription);?>
+
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('style.css') ?>
+    
+    <?= $this->Html->script('z0gravity.js')?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -42,8 +50,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+                <li><a target="_blank" href="/">Home</a></li>
+                <li><a target="_blank" href="/logout">Logout</a></li>
             </ul>
         </div>
     </nav>

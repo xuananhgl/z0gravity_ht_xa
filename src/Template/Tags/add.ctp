@@ -6,10 +6,10 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Tags'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Articles'), ['controller' => 'Articles', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Article'), ['controller' => 'Articles', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('All Actions') ?></li>
+        <li><?= $this->Html->link(__('Back'), $this->request->referer()) ?> </li>
+        <li><?= $this->Html->link(__('Exit'), ['controller'=>'Users','action' => 'profile']) ?></li>
+        <li><?= $this->Html->link(__('Home'), '/') ?></li>
     </ul>
 </nav>
 <div class="tags form large-9 medium-8 columns content">

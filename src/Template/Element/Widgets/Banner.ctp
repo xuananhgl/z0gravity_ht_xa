@@ -12,18 +12,10 @@
                         'width' => '733',
                         'height' => '412',
                         'type' => 'video/ogg',
-                        'class'=> 'img-fluid',
-                    ])?>
+                        'class'=> 'img-fluid',],
+                    )?>
                     <span class='iconMute'><i class="fa fa-solid fa-volume-xmark"></i></span>
                 </div>
-                <!-- <div class="testing">
-                <?php 
-                    // $banner = $this->requestAction('LpImages/randomImage'); 
-                    // debug($banner); exit();
-                    echo $this->Html->image($banner->image_url);
-
-                ?>
-                </div> -->
             </div>       
         </div>
     </div>

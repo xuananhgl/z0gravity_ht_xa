@@ -17,7 +17,7 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
+    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
 
     /**
      * Configure basic information about the application.
@@ -100,6 +100,19 @@ return [
             'className' => FileEngine::class,
             'path' => CACHE,
             'url' => env('CACHE_DEFAULT_URL', null),
+        ],
+        'short' => [
+            'className' => 'File',
+            'duration' => '+1 hours',
+            'path' => CACHE,
+            'prefix' => 'cake_short_'
+        ],
+        // Using a fully namespaced name.
+        'long' => [
+            'className' => 'Cake\Cache\Engine\FileEngine',
+            'duration' => '+1 week',
+            'probability' => 100,
+            'path' => CACHE . 'long' . DS,
         ],
 
         /**
@@ -263,9 +276,9 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'my_app',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'z0gravity_ht',
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */

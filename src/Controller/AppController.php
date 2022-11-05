@@ -16,6 +16,8 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\Core\Configure;
+use Cake\I18n\I18n;
 
 /**
  * Application Controller
@@ -78,6 +80,7 @@ class AppController extends Controller
     
     public function beforeFilter(Event $event){
         $this->Auth->allow(['display']);
+        $this->_setLocate();
     }
 
     public function isAuthorized($user){
@@ -87,5 +90,26 @@ class AppController extends Controller
             return true;
         }
         return false;
+    }
+
+    protected function _setLocate(){
+        $session = $this->getRequest()->getSession();
+        $session->read('Config.language');
+        $locale = $session->read('Config.language'); 
+
+        if( $this->request->getData('locale')){
+            $locale = $this->request->data('locale');
+        }
+        if( $this->request->getQuery('lang')){
+            $locale = $this->request->getQuery('lang');
+        }
+        
+        if( empty( $locale))
+        $locale = Configure::read('APP.defaultLocale');
+        
+        I18n::setLocale($locale);
+        $session->write('Config.language', $locale); 
+        return true;
+        
     }
 }

@@ -1,0 +1,7 @@
+2022-11-03 03:48:58 Error: [RuntimeException] Unknown command `cake server]`. Run `cake --help` to get the list of valid commands. in D:\xampp7.3\htdocs\trung.ho_greensystem\z0gravity_ht_xa\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 347
+Stack Trace:
+#0 D:\xampp7.3\htdocs\trung.ho_greensystem\z0gravity_ht_xa\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'server]')
+#1 D:\xampp7.3\htdocs\trung.ho_greensystem\z0gravity_ht_xa\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

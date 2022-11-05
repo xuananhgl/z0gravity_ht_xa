@@ -114,4 +114,32 @@ class ArticlesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    
+    public function translate($id=null){
+        $article = $this->Articles->get($id, [
+            'contain' => [],
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {  
+            
+            $article = $this->Articles->patchEntity($article, $this->request->getData());
+
+            if ($this->Articles->save($article)) {
+                $this->Flash->success(__('The presses testimonial has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The presses testimonial could not be saved. Please, try again.'));
+        }
+        $this->set(compact('article'));
+    }
+
+    public function tags(){
+        $tags = $this->request->getParam('pass');
+
+        $articles = $this->Articles->find('tagged', [
+            'tags' => $tags
+        ]);
+
+        $this->set(compact('articles', 'tags'));
+    }
 }

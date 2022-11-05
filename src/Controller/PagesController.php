@@ -48,6 +48,11 @@ class PagesController extends AppController
         $this->loadModel('Testimonials');
         $this->loadModel('Articles');
 
+        $this->loadModel('Users');
+        $this->loadModel('Roles');
+        
+        $user = $this->Auth->user();
+        
         $banner = $this->Banners->find('all', [
             'limit' => 100,
             'order' => 'rand()',
@@ -63,7 +68,7 @@ class PagesController extends AppController
             'order'=> 'rand()',
         ])->all();
 
-        $this->set(compact('banner','testimonials','articles'));
+        $this->set(compact('banner','testimonials','articles', 'user'));
         $this->render('home');
     }
     public function VisualEditor(){

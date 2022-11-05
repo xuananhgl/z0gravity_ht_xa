@@ -112,4 +112,22 @@ class TestimonialsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function translate($id=null){
+        $testimonial = $this->Testimonials->get($id, [
+            'contain' => [],
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {  
+            
+            $testimonial = $this->Testimonials->patchEntity($testimonial, $this->request->getData());
+
+            if ($this->Testimonials->save($testimonial)) {
+                $this->Flash->success(__('The presses testimonial has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The presses testimonial could not be saved. Please, try again.'));
+        }
+        $this->set(compact('testimonial'));
+    }
 }

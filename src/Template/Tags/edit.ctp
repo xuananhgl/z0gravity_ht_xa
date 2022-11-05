@@ -9,13 +9,14 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $tag->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $tag->id)]
+                ['action' => 'delete', $user->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Tags'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Articles'), ['controller' => 'Articles', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Article'), ['controller' => 'Articles', 'action' => 'add']) ?></li>
+        
+        <li><?= $this->Html->link(__('Back'), $this->request->referer()) ?> </li>
+        <li><?= $this->Html->link(__('Exit'), ['controller'=>'Users','action' => 'profile']) ?></li>
+        <li><?= $this->Html->link(__('Home'), '/') ?></li>
     </ul>
 </nav>
 <div class="tags form large-9 medium-8 columns content">

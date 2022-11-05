@@ -11,6 +11,11 @@
         <li><?= $this->Form->postLink(__('Delete Role'), ['action' => 'delete', $role->id], ['confirm' => __('Are you sure you want to delete # {0}?', $role->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Roles'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Role'), ['action' => 'add']) ?> </li>
+        
+        <li><?= $this->Html->link(__('Back'), $this->request->referer()) ?> </li>
+        <li><?= $this->Html->link(__('Exit'), ['controller'=>'Users','action' => 'profile']) ?></li>
+        <li><?= $this->Html->link(__('Home'), '/') ?></li>
+
     </ul>
 </nav>
 <div class="roles view large-9 medium-8 columns content">

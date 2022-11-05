@@ -85,45 +85,24 @@ class BannersTable extends Table
             ->requirePresence('btn_content', 'create')
             ->notEmptyString('btn_content');
 
-        // $validator
-        //     ->scalar('image_url')
-        //     ->maxLength('image_url', 255)
-        //     ->requirePresence('image_url', 'create')
-        //     ->notEmptyFile('image_url');
-        // $validator
-        //     ->allowEmpty('image_url')
-        //     ->add('image_url', [
-        //         'validExtension' => [
-        //             'rule' => ['extension',['png']], // default  ['gif', 'jpeg', 'png', 'jpg']
-        //             'message' => __('These files extension are allowed: .png')
-        //         ]
-        // ]);
-        // $validator
-        //     ->allowEmpty('image_url')
-        //     ->add('image_url', [
-        //         'validExtension' => [
-        //             'rule' => ['extension',['png']], // default  ['gif', 'jpeg', 'png', 'jpg']
-        //             'message' => __('These files extension are allowed: .png')
-        //         ]
-        // ]);
-        // $validator
-        //     ->notEmpty('image_url')
-        //     ->add('image_url', 'validFormat',[
-        //             'rule' => '/^([ABCD]{2,2}[0-9]{4,4})$/i',
-        //             'message' => 'Please enter a valid serial number.'
-        //     ]);
         $validator
-            ->notEmptyFile('image_url')
-            ->add('image_url',[
-                'mimeType' => [
-                    'rule' => ['mimeType',['image/jpg', 'image/png', 'image/jpeg']],
-                    'message' => 'Please upload only jpg and png.',
-                ],
-                'fileSize' => [
-                    'rule' => ['fileSize', '<=', '1MB'],
-                    'message' => 'Image file size must be less than 1MB.',
-                ]
-            ]);
+            ->scalar('image_url')
+            ->maxLength('image_url', 255)
+            ->requirePresence('image_url', 'create')
+            ->notEmptyFile('image_url');
+        
+        // $validator
+        //     ->notEmptyFile('image_url')
+        //     ->add('image_url',[
+        //         'mimeType' => [
+        //             'rule' => ['mimeType',['image/jpg', 'image/png', 'image/jpeg']],
+        //             'message' => 'Please upload only jpg and png.',
+        //         ],
+        //         'fileSize' => [
+        //             'rule' => ['fileSize', '<=', '1MB'],
+        //             'message' => 'Image file size must be less than 1MB.',
+        //         ]
+        //     ]);
 
         $validator
             ->scalar('background_color')
